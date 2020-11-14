@@ -28,7 +28,7 @@ public class Student {
     private LocalDate birthDate;
 
     // birthDate jest nazwą kolumny w bazie. Czasami baza nazywa kolumny z podkreślnikami i w tej sytuacji możemy napotkać problemy.
-    @Formula("(year(now())-year(birthDate))")
+    @Formula("(year(now())-year(birth_date))")
     private Integer age;
 
     @Formula("(SELECT AVG(g.value) FROM grade g where g.student_id = id)")
