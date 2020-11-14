@@ -3,6 +3,7 @@ package com.sda.javagdy4.spring.students_demo.model;
 import lombok.*;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.Formula;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -25,6 +26,7 @@ public class Student {
 
     private Double homeDistance;
 
+    @DateTimeFormat(iso= DateTimeFormat.ISO.DATE)
     private LocalDate birthDate;
 
     // birthDate jest nazwą kolumny w bazie. Czasami baza nazywa kolumny z podkreślnikami i w tej sytuacji możemy napotkać problemy.
