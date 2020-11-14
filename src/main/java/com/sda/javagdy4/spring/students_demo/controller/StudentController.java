@@ -24,9 +24,8 @@ public class StudentController {
         return "student_list";
     }
 
-
-
-
+    // #######################################################################################
+    // DO UZUPEŁNIENIA JUTRO / DLA CHĘNTYCH W DOMU (metoda delete i get by id - details)
     // http://localhost:8080/student/5
     @GetMapping("/{id}")
     public String getStudent(@PathVariable(name = "id") Long id){
