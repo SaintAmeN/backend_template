@@ -15,7 +15,6 @@ public class GradeService {
     private final GradeRepository gradeRepository;
     private final StudentRepository studentRepository;
 
-
     public Optional<Student> findById(Long studentId) {
         return studentRepository.findById(studentId);
     }

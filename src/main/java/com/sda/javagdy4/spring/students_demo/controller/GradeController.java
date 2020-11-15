@@ -22,7 +22,7 @@ public class GradeController {
 
     //############## FORM ##############\\
     @GetMapping("/form")
-    public String getGradeForm(Model model, @RequestParam("id") Long studentId){
+    public String getGradeForm(Model model, @RequestParam("studentId") Long studentId){
         model.addAttribute("addedGrade", new Grade());
         model.addAttribute("allSubjects", GradeSubject.values());
         model.addAttribute("studentId", studentId);
@@ -39,7 +39,7 @@ public class GradeController {
 
             gradeService.save(grade);
         }
-        return "redirect:/grade/list";
+        return "redirect:/student/" + studentId;
     }
 
     //############## DELETE ##############\\
