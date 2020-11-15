@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.time.LocalDate;
 import java.util.HashSet;
+import java.util.Optional;
 
 @Controller
 @RequestMapping(path = "/student")
@@ -51,12 +52,15 @@ public class StudentController {
         return "redirect:/student";
     }
 
-
-    // #######################################################################################
-    // DO UZUPEŁNIENIA JUTRO / DLA CHĘNTYCH W DOMU (metoda delete i get by id - details)
     // http://localhost:8080/student/5
     @GetMapping("/{id}")
-    public String getStudent(@PathVariable(name = "id") Long id) {
-        return "student_details";
+    public String getStudent(Model model, @PathVariable(name = "id") Long id) {
+        Optional<Student> studentOptional = studentService.find(id);
+        if (studentOptional.isPresent()) {
+            model.addAttribute("studentWithDetailedInfo", studentOptional.get());
+            return "student_details";
+        }
+
+        return "redirect:/student";
     }
 }

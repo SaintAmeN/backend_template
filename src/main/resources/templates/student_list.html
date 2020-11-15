@@ -27,7 +27,7 @@
             </td>
             <td>
                 <a th:href="@{/student/delete/${student.id}}">Remove</a>
-                <a th:href="@{/student/${student.id}}">Details</a>
+                <a th:href="@{/student/{id}(id=${student.id})}">Details</a>
                 <a th:href="@{/student/edit/${student.id}}">Edit</a>
             </td>
         </tr>
