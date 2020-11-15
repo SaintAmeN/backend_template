@@ -15,13 +15,18 @@ import java.time.LocalDate;
 import java.util.HashSet;
 
 @Controller
-@RequiredArgsConstructor
 @RequestMapping(path = "/student")
 public class StudentController {
 
     // kontroler  zakaz bezpośredniego odwoływania się do bazy danych.
     private final StudentService studentService;
-    private final Student defaultMaxStudent;
+    private final Student defaultStudent;
+
+    @Autowired // @RequiredArgsConstructor
+    public StudentController(StudentService studentService, Student defaultMaxStudent) {
+        this.studentService = studentService;
+        this.defaultStudent = defaultMaxStudent;
+    }
 
     // http://localhost:8080/student
     @GetMapping("")
@@ -33,7 +38,7 @@ public class StudentController {
     // ############ FORMULARZ
     @GetMapping("/form")
     public String getForm(Model model) { // ponieważ Student jest POJO, to stworzy to nową instancję i ją wstrzyknie
-        model.addAttribute("addedStudent", defaultMaxStudent);
+        model.addAttribute("addedStudent", defaultStudent);
 //    @GetMapping("/form")
 //    public String getForm(Model model) { // ponieważ Student jest POJO, to stworzy to nową instancję i ją wstrzyknie
 //        model.addAttribute("addedStudent", new Student());
