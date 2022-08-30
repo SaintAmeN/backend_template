@@ -1,8 +1,7 @@
-package com.sda.javagdy4.spring.students_demo.repository;
+package com.sda.java.spring.students_demo.repository;
 
-import com.sda.javagdy4.spring.students_demo.model.Student;
+import com.sda.java.spring.students_demo.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

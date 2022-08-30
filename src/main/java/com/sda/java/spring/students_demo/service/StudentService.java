@@ -1,9 +1,7 @@
-package com.sda.javagdy4.spring.students_demo.service;
+package com.sda.java.spring.students_demo.service;
 
-import com.sda.javagdy4.spring.students_demo.controller.StudentController;
-import com.sda.javagdy4.spring.students_demo.model.Student;
-import com.sda.javagdy4.spring.students_demo.repository.StudentRepository;
-import lombok.RequiredArgsConstructor;
+import com.sda.java.spring.students_demo.model.Student;
+import com.sda.java.spring.students_demo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

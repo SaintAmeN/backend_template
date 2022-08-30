@@ -1,4 +1,4 @@
-package com.sda.javagdy4.spring.students_demo;
+package com.sda.java.spring.students_demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

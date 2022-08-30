@@ -1,6 +1,6 @@
-package com.sda.javagdy4.spring.students_demo.configuration;
+package com.sda.java.spring.students_demo.configuration;
 
-import com.sda.javagdy4.spring.students_demo.model.Student;
+import com.sda.java.spring.students_demo.model.Student;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

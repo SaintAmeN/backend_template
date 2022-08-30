@@ -1,9 +1,9 @@
-package com.sda.javagdy4.spring.students_demo.service;
+package com.sda.java.spring.students_demo.service;
 
-import com.sda.javagdy4.spring.students_demo.model.Grade;
-import com.sda.javagdy4.spring.students_demo.model.Student;
-import com.sda.javagdy4.spring.students_demo.repository.GradeRepository;
-import com.sda.javagdy4.spring.students_demo.repository.StudentRepository;
+import com.sda.java.spring.students_demo.model.Grade;
+import com.sda.java.spring.students_demo.model.Student;
+import com.sda.java.spring.students_demo.repository.GradeRepository;
+import com.sda.java.spring.students_demo.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

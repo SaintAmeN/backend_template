@@ -1,4 +1,4 @@
-package com.sda.javagdy4.spring.students_demo.model;
+package com.sda.java.spring.students_demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

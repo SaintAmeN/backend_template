@@ -1,4 +1,4 @@
-package com.sda.javagdy4.spring.students_demo.controller;
+package com.sda.java.spring.students_demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

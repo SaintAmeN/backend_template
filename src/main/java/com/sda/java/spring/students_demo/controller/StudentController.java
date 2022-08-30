@@ -1,8 +1,7 @@
-package com.sda.javagdy4.spring.students_demo.controller;
+package com.sda.java.spring.students_demo.controller;
 
-import com.sda.javagdy4.spring.students_demo.model.Student;
-import com.sda.javagdy4.spring.students_demo.service.StudentService;
-import lombok.RequiredArgsConstructor;
+import com.sda.java.spring.students_demo.service.StudentService;
+import com.sda.java.spring.students_demo.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,8 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.time.LocalDate;
-import java.util.HashSet;
 import java.util.Optional;
 
 @Controller

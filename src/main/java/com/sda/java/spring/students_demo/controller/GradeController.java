@@ -1,9 +1,9 @@
-package com.sda.javagdy4.spring.students_demo.controller;
+package com.sda.java.spring.students_demo.controller;
 
-import com.sda.javagdy4.spring.students_demo.model.Grade;
-import com.sda.javagdy4.spring.students_demo.model.GradeSubject;
-import com.sda.javagdy4.spring.students_demo.model.Student;
-import com.sda.javagdy4.spring.students_demo.service.GradeService;
+import com.sda.java.spring.students_demo.model.GradeSubject;
+import com.sda.java.spring.students_demo.service.GradeService;
+import com.sda.java.spring.students_demo.model.Grade;
+import com.sda.java.spring.students_demo.model.Student;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
